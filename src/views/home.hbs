@@ -1,0 +1,19 @@
+<h1>this is homepage</h1>
+<h2>{{{ha}}}</h2>
+
+{{#each tours}}
+{{{name}}}
+<br>
+{{/each}}
+<H1>SEARCH</H1>
+<form action="/search", method="GET">
+<input name="id" type="text" placeholder="id">
+<button type="submit" style="width: 100px;"><i class="fa fa-search"></i></button>
+</form>
+
+<h1>FIND TOURS RESULT</h1>
+{{#each findtours}}
+{{{name}}} 
+{{{price}}}
+<br>
+{{/each}}
